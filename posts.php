@@ -37,7 +37,7 @@ $posts = $statment->fetchALL();
 ?>
 <?php foreach ($posts as $post ) { ?>
  <div class="blog-post"> 
-     <h2 class="blog-post-title"><a href=# ><?php echo $post['Title']; ?></a></h2>
+     <h2 class="blog-post-title"><a href="single-post.php?Id=<?php echo($post['Id'])?>" > <?php echo ($post['Title'])?> </a></h2>
     <p class="blog-post-meta"><?php echo $post['Created_at']; ?> by <?php echo $post['Author']?> </p>
     <p><?php echo $post['Body']?> </p>
     
